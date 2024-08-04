@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--This is my first Bean-->
+    <bean class="com.pranay.springExample1.demo.bean.Student" name="studentBean">
+        <property name="id">
+            <value>2334</value>
+        </property>
+        <property name="name">
+            <value>Pranay Ramteke</value>
+        </property>
+        <property name="address">
+            <value>Nagpur</value>
+        </property>
+    </bean>
+
+    <bean class="com.pranay.springExample1.demo.bean.Programmer" name="pranay">
+        <property name="copy">
+            <value>true</value>
+        </property>
+        <property name="skills">
+            <value>Master Of SpringAndSpringBoot</value>
+        </property>
+    </bean>
+
+    <bean class="com.pranay.springExample1.demo.bean.Programmer" name="pranayBabu">
+        <property name="copy" value="false" ></property>
+        <property name="skills" value="CEO Of Google" ></property>
+    </bean>
+
+
+</beans>
