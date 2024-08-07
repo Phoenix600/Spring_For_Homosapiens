@@ -30,5 +30,32 @@
         <property name="skills" value="CEO Of Google" ></property>
     </bean>
 
+    <bean class="com.pranay.springExample1.demo.bean.Programmer" name="pranayBua">
+        <property name="copy" value="true"/>
+        <property name="skills" value="java"/>
+    </bean>
+
+<!--    Inserting The Collection Types Via Property Injection (Setter Method)-->
+    <bean class="com.pranay.springExample1.demo.bean.SuperHero" name="batman">
+        <property name="heroName" value="Batman"></property>
+
+        <property name="superPowers">
+            <list>
+                <value>Super Intelligent</value>
+                <value>Super Rich</value>
+                <value>Has Great Butler</value>
+                <value>Orphan</value>
+                <value>Struggles To Fight His Own Deamons</value>
+            </list>
+        </property>
+
+        <property name="missions">
+            <map>
+                <entry key="mission-1" value="Finding Joker"/>
+                <entry key="mission-2" value="Finding Love Interest CatWoman"/>
+            </map>
+        </property>
+
+    </bean>
 
 </beans>

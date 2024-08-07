@@ -2,6 +2,7 @@ package com.pranay.springExample1.demo;
 
 import com.pranay.springExample1.demo.bean.Programmer;
 import com.pranay.springExample1.demo.bean.Student;
+import com.pranay.springExample1.demo.bean.SuperHero;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -23,5 +24,10 @@ public class DemoApplication {
 		Programmer programmer1 = (Programmer) context.getBean("pranayBabu");
 		System.out.println(programmer1);
 
+		Programmer programmer2 = (Programmer)context.getBean("pranayBua");
+		System.out.println(programmer2);
+
+		SuperHero batman = (SuperHero) context.getBean("batman");
+		System.out.println(batman);
 	}
 }
